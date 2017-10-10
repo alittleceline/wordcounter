@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Céline Coelho</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="counter.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+</head>
+<body>
+    <section class="container">
+    <h1 class="mt-2">Word occurrence counter</h1>
+    
+    <form class="count-words-form">
+        <div class="form-group">
+            <label for="count-words-textfield">Paste your text in the textfield bellow:</label>
+            <textarea class="form-control count-words-textfield" id="count-words-textfield" cols="60" rows="20"></textarea>
+        </div>
+        <p><button type="submit" class="btn btn-primary count-words-submit">Start count</button></p>
+        <div class="alert alert-danger d-none" role="alert">Textfield is empty! Nothing to count.</div>
+    </form>
+    </section>
+    <section class="container count-display-block d-none">
+        <h2>Here's the result</h2>
+        <ul class="list-group count-display-list">
+        </ul>
+    </section>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
